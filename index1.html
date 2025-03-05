@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="library">
+        <h2>📚 Personal Book Library</h2>
+
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search books..." onkeyup="searchBooks()">
+
+        <!-- Add Book Section -->
+        <h3>Add a Book</h3>
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <select id="category">
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Fantasy">Fantasy</option>
+        </select>
+        <input type="file" id="image" accept="image/*"> <!-- Image Upload -->
+        <button onclick="addBook()">Add Book</button>
+
+        <!-- Book List -->
+        <h3>Book Collection</h3>
+        <ul id="book-list"></ul>
+
+        <!-- Borrowing History -->
+        <h3>Borrowing History</h3>
+        <ul id="history-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
